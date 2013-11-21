@@ -10,9 +10,16 @@ require_relative 'bowling'
 	     expect(game.rolls).to eq([])
 	    end
 	 end
+	end
 
-	context 'a bowler rolls twice and does not knock down all pins' do
-		
+
+	describe '#score' do
+	  it 'scores the game as 0 when only gutter balls are thrown' do
+	    game = BowlingGame.new
+	    20.times { game.roll(0) }
+
+	    expect(game.score).to eq(0)
+	  end
 	end
 
 
@@ -35,10 +42,7 @@ require_relative 'bowling'
 
 
 
-
-
-
-	end
+	
 
 
 
