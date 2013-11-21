@@ -1,7 +1,8 @@
 class BowlingGame
+	attr_accessor :rolls
 
 	def initialize
-		@roll = []
+		@rolls = []
 	end
 	
 
