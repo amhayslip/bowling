@@ -47,6 +47,15 @@ describe '#score' do
        expect(game.score).to eq(26)
       end
     end
+    # context 'when a spare is thrown in the tenth frame' do
+    #    it 'records the frame as 10 plus adds one more roll'
+    # end
+    
+    # context 'when a stike is thrown in the tenth frame' do
+    #    it 'records the frame as 10 plus adds two more rolls'
+    #    	19.times {game.roll(0) }
+    #    end  
+    # end 
 
 
 
